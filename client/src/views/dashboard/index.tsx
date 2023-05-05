@@ -1,7 +1,7 @@
 import { Box, useMediaQuery } from "@mui/material";
-import RowOne from "./rowOne";
-import RowTwo from "./rowTwo";
-import RowThree from "./rowThree";
+import RowOne from './rowOne';
+import RowTwo from './rowTwo';
+import RowThree from './rowThree';
 
 const gridTemplateLargeScreens = `
   "a b c"
@@ -72,7 +72,7 @@ const Dashboard = () => {
     >
 		  <RowOne />
 		  <RowTwo/>
-      	  <RowThree/>
+      <RowThree/>
     </Box>
   );
 };
