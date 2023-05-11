@@ -1,7 +1,7 @@
 import { Box, useMediaQuery } from "@mui/material";
-import RowOne from './rowOne';
-import RowTwo from './rowTwo';
-import RowThree from './rowThree';
+import RowOne from './RowOne';
+import RowTwo from './RowTwo';
+import RowThree from './RowThree';
 
 const gridTemplateLargeScreens = `
   "a b c"

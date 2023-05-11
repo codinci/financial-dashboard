@@ -1,7 +1,7 @@
 import DashboardBox from '@/components/DashboardBox';
 
 
-const rowTwo = () => {
+const RowTwo = () => {
   return (
 	  <>
 		<DashboardBox bgcolor="#fff" gridArea="d"></DashboardBox>
@@ -11,4 +11,4 @@ const rowTwo = () => {
   )
 }
 
-export default rowTwo
+export default RowTwo;
