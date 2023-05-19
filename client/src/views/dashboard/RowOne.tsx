@@ -70,7 +70,10 @@ const RowOne = () => {
 					subtitle="top line represents revenue, bottom line represents expenses"
 					sideText="+4%"
 				/>
-				 <ResponsiveContainer width="100%" aspect={window.innerWidth >= 1200 ? 1 : window.innerWidth >= 800 ? 2 : 1} height="100%">
+				<ResponsiveContainer
+					width="100%"
+					aspect={window.innerWidth >= 1200 ? 1.35 : window.innerWidth >= 800 ? 2.2 : 1}
+					height="100%">
 					<AreaChart
 						width={500}
 						height={400}
@@ -150,7 +153,7 @@ const RowOne = () => {
 				/>
 				<ResponsiveContainer
 					width="100%"
-					aspect={window.innerWidth >= 1200 ? 0.88 : window.innerWidth >= 800 ? 2 : 1}
+					aspect={window.innerWidth >= 1200 ? 1.13 : window.innerWidth >= 800 ? 1.95 : 0.95}
 					height="100%"
 				>
 					<LineChart
@@ -162,32 +165,6 @@ const RowOne = () => {
 							bottom: 55,
 						}}
 					>
-          				<defs>
-							<linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
-								<stop
-									offset="5%"
-									stopColor={palette.primary[300]}
-									stopOpacity={0.5}
-								/>
-								<stop
-									offset="95%"
-									stopColor={palette.primary[300]}
-									stopOpacity={0}
-								/>
-							</linearGradient>
-							<linearGradient id="colorExpenses" x1="0" y1="0" x2="0" y2="1">
-								<stop
-									offset="5%"
-									stopColor={palette.primary[300]}
-									stopOpacity={0.5}
-								/>
-								<stop
-									offset="95%"
-									stopColor={palette.primary[300]}
-									stopOpacity={0}
-								/>
-							</linearGradient>
-						</defs>
 						<CartesianGrid vertical={false} stroke={palette.grey[800]}/>
 						<XAxis
 							dataKey="name"
@@ -205,9 +182,12 @@ const RowOne = () => {
 							axisLine={false}
 							style={{ fontSize: "10px" }}/>
 						<Tooltip />
-						<Legend height={20} wrapperStyle={{
-							margin: '0 0 10px 0'
-						}} />
+						<Legend
+							height={20}
+							wrapperStyle={{
+								margin: '0 0 10px 0'
+							}}
+						/>
 						<Line
 							yAxisId="left"
 							type="monotone"
@@ -234,7 +214,7 @@ const RowOne = () => {
 				/>
 				<ResponsiveContainer
 					width="100%"
-					aspect={window.innerWidth >= 1200 ? 1 : window.innerWidth >= 800 ? 2 : 1}
+					aspect={window.innerWidth >= 1200 ? 1.5 : window.innerWidth >= 800 ? 2.65 : 1.25}
 					height="100%"
 				>
 					<BarChart
