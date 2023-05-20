@@ -6,8 +6,8 @@ loadType(mongoose);
 
 const TransactionSchema = new Schema({
 	buyer: {
-		type: mongoose.Types.Currency,
-		currency: 'KSH'
+		type: String,
+		required: true
 	},
 	amount: {
 		type: mongoose.Types.Currency,
