@@ -211,10 +211,9 @@ const RowThree = () => {
 			>
 				<Box
 					height="15px"
-					bgColor={palette.primary[600]}
+					bgcolor={palette.primary[600]}
 					borderRadius="1rem"
-					width="40%"
-				>
+					width="40%">
 				</Box>
 			</Box>
 
